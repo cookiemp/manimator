@@ -1,0 +1,20 @@
+# Python virtual environment
+# This folder is specific to your machine and can be huge.
+venv/
+
+# Python cache files
+# These are temporary files Python creates.
+__pycache__/
+*.pyc
+
+# The .env file
+# CRITICAL: This prevents your secret API key from being uploaded.
+.env
+
+# Generated media files
+# These are outputs, not source code, and can take up a lot of space.
+/media/
+
+# IDE and OS specific files
+.vscode/
+.DS_Store

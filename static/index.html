@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manimator</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Syntax Highlighting Stylesheets -->
+    <link id="dark-theme-style" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <link id="light-theme-style" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css" disabled>
+    
+    <!-- Our own stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for our new grid layout -->
+    <div class="grid-container">
+        <header class="panel panel-header-main">
+            <h1>MANIMATOR</h1>
+            <p>STATUS: ONLINE</p>
+            <!-- NEW THEME SWITCH STRUCTURE -->
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-checkbox">
+                    <input type="checkbox" id="theme-checkbox" />
+                    <div class="slider"></div>
+                    <span class="label-dark">DARK</span>
+                    <span class="label-light">LIGHT</span>
+                </label>
+            </div>
+        </header>
+
+        <div class="panel panel-input">
+            <h2>PROMPT INPUT</h2>
+            <textarea id="prompt-input" placeholder=">> Enter animation directive..."></textarea>
+            <button id="generate-btn">EXECUTE</button>
+        </div>
+
+        <div class="panel panel-status">
+            <h2>SYSTEM LOG</h2>
+            <div id="status-container">
+                <div id="status-text">> STANDBY</div>
+            </div>
+        </div>
+
+        <div class="panel panel-code">
+            <div class="panel-header-sub">
+                <h3>GENERATED SCRIPT</h3>
+                <button id="copy-btn">COPY</button>
+            </div>
+            <pre><code id="code-display" class="language-python"></code></pre>
+        </div>
+
+        <div class="panel panel-video">
+             <div class="panel-header-sub">
+                <h3>VISUAL OUTPUT</h3>
+            </div>
+            <div id="video-display">
+                <!-- Video will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts with the 'defer' attribute to fix the race condition -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
