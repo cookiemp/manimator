@@ -9,24 +9,24 @@ An AI-powered web application that leverages Google's Gemini model to generate a
 
 ---
 
-## ✨ Demo
+##  Demo
 
 ![Demo](./assets/demo.gif)
 
 ---
 
-## 🔧 Core Features
+##  Core Features
 
-- 🔮 **AI-Powered Animation**: Enter a conceptual prompt, and the Gemini AI will generate the Python code required to animate it.
-- 🖥️ **Futuristic UI**: A custom-built, responsive "spy-tech" dashboard interface that is both stylish and functional.
-- 🌗 **Light/Dark Mode**: A sleek, animated toggle switch to move between light and dark themes, with the user's preference saved locally.
-- 🛡️ **Secure Sandboxed Execution**: Untrusted, AI-generated code is executed in an isolated Docker container to protect the host system.
-- ✅ **Robust Error Handling**: The backend can intelligently distinguish between AI failures, Manim code crashes, and "do-nothing" scripts, providing clear feedback to the user.
-- 📝 **Syntax Highlighting**: The generated code is beautifully highlighted for readability.
+-  **AI-Powered Animation**: Enter a conceptual prompt, and the Gemini AI will generate the Python code required to animate it.
+-  **Futuristic UI**: A custom-built, responsive "spy-tech" dashboard interface that is both stylish and functional.
+-  **Light/Dark Mode**: A sleek, animated toggle switch to move between light and dark themes, with the user's preference saved locally.
+-  **Secure Sandboxed Execution**: Untrusted, AI-generated code is executed in an isolated Docker container to protect the host system.
+-  **Robust Error Handling**: The backend can intelligently distinguish between AI failures, Manim code crashes, and "do-nothing" scripts, providing clear feedback to the user.
+-  **Syntax Highlighting**: The generated code is beautifully highlighted for readability.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: Python, FastAPI, Uvicorn  
 - **AI**: Google Gemini API (`google-generativeai`)  
@@ -36,7 +36,7 @@ An AI-powered web application that leverages Google's Gemini model to generate a
 
 ---
 
-## 🚀 Setup and Installation
+##  Setup and Installation
 
 Follow these steps to get the project running on your local machine.
 
@@ -129,7 +129,7 @@ http://127.0.0.1:8000
 
 ---
 
-## ⚙️ Creating the `requirements.txt` File
+##  Creating the `requirements.txt` File
 
 After activating your virtual environment and installing the packages with `pip` during development, run the following command in your terminal to create the `requirements.txt` file for others to use:
 
@@ -139,7 +139,7 @@ pip freeze > requirements.txt
 
 ---
 
-## 🧪 Usage
+##  Usage
 
 Once the server is running, open your web browser and navigate to:
 
@@ -153,14 +153,14 @@ Click the **"EXECUTE"** button and watch the magic happen!
 
 ---
 
-## 🗺️ Roadmap: Future Improvements
+##  Roadmap: Future Improvements
 
-- 🔁 **Self-Correction Loop**: When a Manim error is detected, automatically send the buggy code and the error message back to the AI to attempt a fix.
-- 🎚️ **Parameter Controls**: Allow the user to control parameters like `run_time`, `color`, `font_size` from the UI.
-- 🕘 **History Panel**: Add a panel that shows a history of previous prompts for the current session.
+-  **Self-Correction Loop**: When a Manim error is detected, automatically send the buggy code and the error message back to the AI to attempt a fix.
+-  **Parameter Controls**: Allow the user to control parameters like `run_time`, `color`, `font_size` from the UI.
+-  **History Panel**: Add a panel that shows a history of previous prompts for the current session.
 
 ---
 
-## 📄 License
+##  License
 
 This project is distributed under the **MIT License**.
